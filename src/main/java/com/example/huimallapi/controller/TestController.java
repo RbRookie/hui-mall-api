@@ -1,6 +1,6 @@
-package com.example.huimallapi;
+package com.example.huimallapi.controller;
 
-import org.springframework.stereotype.Controller;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
+    @ApiOperation(value = "测试Swagger")
     @RequestMapping("/test")
     public String TestMethod() {
 
